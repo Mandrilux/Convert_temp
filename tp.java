@@ -38,11 +38,14 @@ public class tp
 		sc.nextLine();
 		tmp = sc.nextLine();
 		if (tmp.length() != 0)
-		    stop = tmp.charAt(0);
+		    {
+			tmp = tmp.toLowerCase();
+			stop = tmp.charAt(0);
+		    }
 		else
 		    stop = ' ';
-	    } while (stop != 'O' && stop != 'o' && stop != 'n' && stop != 'N');
-	}while (stop == 'O' || stop == 'o');
+	    } while (stop != 'o' && stop != 'n');
+	}while (stop == 'o');
 	System.out.println("Au revoir");
     }
 
